@@ -50,3 +50,4 @@
       10.Applied GridSearch for hypertuning with Logistic Regression One Vs Rest.
       11.Found Best HyperParam of C = 1
       12.Applied Logistic Regression One Vs Rest
+      13.On DataSet of 100K [80K train data and 20K test data], Micro Avg F1 Score comes out to be 0.425.  
