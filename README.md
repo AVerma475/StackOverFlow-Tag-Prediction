@@ -33,3 +33,20 @@
     1. Predict as many tags as possible with high precision and recall.
     2. Incorrect tags could impact customer experience on StackOverflow.
     3. No strict latency constraints.
+
+
+* Procedure for solving CaseStudy:
+
+      1. The major objective is Predict as many tags as possible with high precision and recall And the Performance metric used = Mean Average F1Score                because it takes Frequency of Tags into Account.
+      2. We loaded Data using pandas.
+      3. Did Ananlysis of Tag and found most frequent tags are Programming Languages like:
+                            C#,Java,php,Javascript,Android
+      4. Did Analysis of Titles by finding titles similar to above programming languages.
+      5. Did Preprocessing and cleaning of Data and took 1M points for Analysis and 5500 tags.
+      6. Due to compute resources took only 0.5M points with 500 tags .
+      7. Furthher reduced to 100K points and 500 tags.
+      8. perfromed TFIDF Vectorzer and did SVM One Vs Rest .
+      9. Performd CountVect with n_gram=(1,4), took top 10K featuress.
+      10.Applied GridSearch for hypertuning with Logistic Regression One Vs Rest.
+      11.Found Best HyperParam of C = 1
+      12.Applied Logistic Regression One Vs Rest
